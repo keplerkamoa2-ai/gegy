@@ -1,0 +1,83 @@
+/* 1. Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Style du corps de la page (Centrage avec Flexbox) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f4f6; /* Fond gris clair */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Prend toute la hauteur de l'écran */
+}
+
+/* 3. Style de la carte */
+.card {
+    background-color: #ffffff;
+    width: 300px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    text-align: center;
+    transition: transform 0.3s ease; /* Animation fluide */
+}
+
+/* Effet au survol de la carte */
+.card:hover {
+    transform: translateY(-10px); /* Fait "sauter" la carte légèrement */
+}
+
+/* 4. Style de l'avatar */
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Rend l'image parfaitement ronde */
+    object-fit: cover;
+    border: 3px solid #4f46e5; /* Bordure violette/bleue */
+    margin-bottom: 15px;
+}
+
+/* 5. Typographie */
+h2 {
+    color: #1f2937;
+    margin-bottom: 5px;
+}
+
+.title {
+    color: #4f46e5;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.description {
+    color: #6b7280;
+    font-size: 0.85em;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/* 6. Style du bouton */
+.btn {
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Effet au survol du bouton */
+.btn:hover {
+    background-color: #4338ca;
+    transform: scale(1.05); /* Grossit légèrement le bouton */
+}
